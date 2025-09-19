@@ -1,0 +1,51 @@
+# Arquivo de configuração do projeto Flutter
+# Define dependências, metadados e configurações do projeto
+# Este arquivo é lido pelo Flutter para gerenciar o projeto
+
+name: pet_saude # Nome do projeto (sem espaços, apenas letras minúsculas e underscore)
+description: Sistema de cadastro de pacientes para PET Saúde # Descrição do projeto
+version: 1.0.0+1 # Versão do app (formato: versão+build)
+
+# Configurações do ambiente Flutter
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Versão mínima do Dart SDK (Flutter 3.0+)
+
+# Dependências do projeto (bibliotecas externas)
+dependencies:
+  flutter: # Framework Flutter (obrigatório)
+    sdk: flutter # SDK do Flutter
+  
+  # Dependências para banco de dados MySQL
+  mysql1: ^0.20.0 # Biblioteca para conectar com MySQL local
+  
+  # Dependências para interface do usuário
+  cupertino_icons: ^1.0.2 # Ícones do iOS (obrigatório para Flutter)
+  
+  # Dependências para gerenciamento de estado (opcional, mas recomendado)
+  provider: ^6.1.1 # Para gerenciar estado da aplicação
+  
+  # Dependências para requisições HTTP (se precisar de APIs)
+  http: ^1.1.0 # Para fazer requisições HTTP
+
+# Dependências de desenvolvimento (apenas para desenvolvimento)
+dev_dependencies:
+  flutter_test: # Framework de testes do Flutter
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0 # Regras de linting para código limpo
+
+# Configurações do Flutter
+flutter:
+  # Recursos do projeto (imagens, fontes, etc.)
+  uses-material-design: true # Usa Material Design (tema padrão do Android)
+  
+  # Configurações de assets (imagens, fontes, etc.)
+  # assets:
+  #   - images/ # Pasta de imagens
+  #   - fonts/ # Pasta de fontes
+  
+  # Configurações de fontes personalizadas
+  # fonts:
+  #   - family: CustomFont # Nome da fonte
+  #     fonts:
+  #       - asset: fonts/CustomFont-Regular.ttf # Arquivo da fonte
